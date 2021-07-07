@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="20dp"
+      android:orientation="vertical">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <LinearLayout
+              android:id="@+id/linearLayout"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              tools:ignore="MissingConstraints">
+
+              <de.hdodenhof.circleimageview.CircleImageView
+                  android:id="@+id/profile_image"
+                  android:layout_width="30dp"
+                  android:layout_height="40dp"
+                  android:src="@drawable/wahyu" />
+
+              <TextView
+                  android:id="@+id/name"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_marginLeft="6dp"
+                  android:textStyle="bold"
+                  android:textSize="11dp"
+                  android:text="Wahyu Eka" />
+          </LinearLayout>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:text="8 min"
+              android:textSize="11dp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="1.0"
+              app:layout_constraintStart_toEndOf="@+id/linearLayout"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_bias="0.523"
+              tools:ignore="MissingConstraints" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <TextView
+          android:id="@+id/caption"
+          android:layout_marginTop="5dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="The most beautifull design in the world!"
+          android:textStyle="bold"
+          android:textSize="12dp"/>
+
+      <ImageView
+          android:id="@+id/postingan"
+          android:layout_width="match_parent"
+          android:layout_height="140dp"
+          android:src="@drawable/postingan1"/>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_marginBottom="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <LinearLayout
+              android:id="@+id/linearLayout2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              tools:ignore="MissingConstraints">
+
+              <ImageView
+                  android:layout_width="18dp"
+                  android:layout_height="20dp"
+                  android:src="@drawable/like" />
+
+              <ImageView
+                  android:layout_width="18dp"
+                  android:layout_height="20dp"
+                  android:src="@drawable/heart" />
+
+              <ImageView
+                  android:layout_width="18dp"
+                  android:layout_height="20dp"
+                  android:src="@drawable/emot" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_bias="0.523"
+              app:layout_constraintHorizontal_bias="1.0"
+              tools:ignore="MissingConstraints">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="2.6k Comments"
+                  android:layout_marginRight="20dp"
+                  android:textSize="11dp"/>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="2.6k Comments"
+                  android:textSize="11dp"/>
+
+          </LinearLayout>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+  </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
